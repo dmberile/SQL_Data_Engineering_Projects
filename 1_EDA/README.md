@@ -31,7 +31,7 @@ Job market analysts need to answer questions like:
 
 This project analyzes a **data warehouse** built using a star schema design. The warehouse structure consists of:
 
-![Data Warehouse Schema](1_EDA/Images/1_2_Data_Warehouse.png)
+![Data Warehouse Schema](https://github.com/dmberile/SQL_Data_Engineering_Projects/blob/main/1_EDA/Images/1_2_Data_Warehouse.png?raw=true)
 
 - **Fact Table:** `job_postings_fact` - Central table containing job posting details (job titles, locations, salaries, dates, etc.)
 - **Dimension Tables:** 
