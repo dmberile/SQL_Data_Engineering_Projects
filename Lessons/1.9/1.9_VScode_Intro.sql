@@ -1,1 +1,4 @@
-SELECT 43 as ANS;
+SELECT DISTINCT
+  job_country
+FROM
+  job_posting_facts
