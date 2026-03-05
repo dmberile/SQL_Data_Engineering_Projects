@@ -27,6 +27,7 @@ GROUP BY
 ORDER BY
     demand_count DESC
 LIMIT 10;
+ 
 
 /*
 
@@ -46,5 +47,8 @@ LIMIT 10;
 │ tensorflow │          633 │
 ├────────────┴──────────────┤
 │ 10 rows         2 columns │
+
 └───────────────────────────┘
 */
+ 
+ 
