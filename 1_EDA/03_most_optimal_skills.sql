@@ -49,4 +49,25 @@ LIMIT 20;
 ├─────────┴───────────────┴──────────────┴─────────────────┴───────────────┤
 │ 12 rows                                                        5 columns │
 └──────────────────────────────────────────────────────────────────────────
+
+TAKEAWAYS:
+    - Python is the clear #1 optimal skill — it leads in demand, salary,
+      AND composite score. There is no closer second-place competitor.
+    - Java is the biggest log-transformation beneficiary: low demand (54)
+      would rank it 10th by count alone, but its $144,500 median salary
+      elevates it to 4th on the optimal score — a compelling case for
+      specialization over breadth.
+    - Tableau is the clearest overperformer on raw demand but underperformer
+      on salary — its $95K median holds back what would otherwise be a 
+      top-5 finish. Useful as a supporting skill, not a primary focus.
+    - SAP and Oracle confirm the pattern from Query 2: high frequency in
+      legacy enterprise environments does not translate to financial reward
+      in modern Data Science roles.
+    - Excel's appearance at #9 is noteworthy — often dismissed as basic,
+      its salary ($121K) and score (4.81) suggest it remains a genuine
+      signal of business-ready data skills employers value.
+    - Cloud platforms (AWS, Azure) both score above 5.0 — reinforcing that
+      cloud fluency is becoming a core, not supplementary, expectation.
+
+      
 */

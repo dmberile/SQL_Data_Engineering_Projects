@@ -29,7 +29,7 @@ ORDER BY
 LIMIT 10;
 
 /*
-
+RESULTS 
 ─────────┬───────────────┬─────────────┐
 │ skills  │ median_salary │ skill_count │
 │ varchar │    double     │    int64    │
@@ -47,4 +47,22 @@ LIMIT 10;
 ├─────────┴───────────────┴─────────────┤
 │ 10 rows                     3 columns │
 └───────────────────────────────────────┘
+
+TAKEAWAYS:
+    - Java offers the highest median salary ($144,500) but lower demand (54),
+      suggesting it's a high-value differentiator rather than a core requirement
+    - Python is the strongest overall skill — top in both demand (307) AND
+      strong salary ($131,000), making it the clearest priority for skill-building
+    - SAP and Oracle appear frequently but have notably lower salary ceilings
+      ($75,000) — likely tied to legacy/enterprise support roles rather than
+      modern DS positions
+    - Cloud (AWS) and big data (Spark) skills punch above their frequency in
+      salary, signaling growing strategic value
+    - Tableau's gap: high demand (126) but lower median ($95,273) suggests it
+      is often a supporting skill rather than a primary hiring driver
+
+ TABLES USED:
+    - job_postings_fact  (aliased: jpf)
+    - skills_job_dim     (aliased: sjd)
+    - skills_dim         (aliased: sd)
 */

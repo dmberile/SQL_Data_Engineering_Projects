@@ -30,6 +30,7 @@ LIMIT 10;
  
 
 /*
+RESULTS
 ┌────────────┬──────────────┐
 │   skills   │ demand_count │
 │  varchar   │    int64     │
@@ -46,5 +47,19 @@ LIMIT 10;
 │ tensorflow │          633 │
 ├────────────┴──────────────┤
 │ 10 rows         2 columns │
-
 └───────────────────────────┘
+
+ TAKEAWAYS:
+    - Python + SQL + R form the core foundation for nearly all DS roles
+    - Cloud platforms (AWS, Azure) and big data tools (Spark) are becoming 
+      standard expectations, not just nice-to-haves
+    - TensorFlow's presence confirms ML skills are valued even in non-remote roles
+    - SAS remaining in the top 5 reflects demand in regulated industries
+      (healthcare, finance, government)
+
+  TABLES USED:
+    - job_postings_fact  (aliased: jpf)
+    - skills_job_dim     (aliased: sjd)
+    - skills_dim         (aliased: sd)
+    
+    */

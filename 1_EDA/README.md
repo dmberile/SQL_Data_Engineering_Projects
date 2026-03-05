@@ -11,7 +11,7 @@ A SQL project analyzing the data engineer job market using real world job postin
 
 ## 🧾 Executive Summary (For Hiring Managers)
 
-- ✅ **Project scope:** Built **3 analytical queries** that answer key questions about the data engineer job market  
+- ✅ **Project scope:** Built **3 analytical queries** that answer key questions about the data Science job market  
 - ✅ **Data modeling:** Used **multi-table joins** across fact and dimension tables to extract insights 
 - ✅ **Analytics:** Applied **aggregations, filtering, and sorting** to find top skills by demand, salary, and overall value  
 - ✅ **Outcomes:** Delivered **actionable insights** on SQL/Python dominance, cloud trends, and salary patterns
@@ -65,7 +65,7 @@ By querying across these interconnected tables, I extracted insights about skill
 1_EDA/
 ├── 01_top_demanded_skills.sql    # Demand analysis query
 ├── 02_top_paying_skills.sql      # Salary analysis query
-├── 03_most_optimal_skills.sql         # Combined demand/salary optimization
+├── 03_most_optimal_skills.sql    # Combined demand/salary optimization
 └── README.md                     # You are here
 ```
 ---
@@ -82,10 +82,12 @@ By querying across these interconnected tables, I extracted insights about skill
 
 ### Key Insights
 
-- 🧠 Core languages: SQL and Python each appear in ~29,000 job postings, making them the most demanded skills
-- ☁️ Cloud platforms: AWS and Azure are critical for modern data engineering roles- 
-- 🧱 Infra & tooling: Kubernetes, Docker, and Terraform are associated with premium salaries
-- 🔥 Big data tools: Apache Spark shows strong demand with competitive compensation
+- 🐍 **Core languages:** Python, SQL, and R form the non-negotiable foundation for nearly all DS roles — Python leads in demand (4,187 postings), salary ($131K median), and optimal score (7.5)
+- 💰 **Hidden salary gem:** Java ranks 10th in demand but 1st in median salary ($144,500), making it the highest-paying differentiator for Data Scientists willing to specialize
+- ☁️ **Cloud is now core:** AWS ($125K) and Azure ($130K) both score above 5.0 on the optimal ranking — cloud fluency has shifted from a nice-to-have to a baseline expectation
+- 🔥 **Big data pays:** Apache Spark ($127,550 median) and AWS rank closely together, signaling that large-scale data processing skills carry real compensation weight
+- 📊 **Tableau trap:** Despite ranking 4th in demand, Tableau's $95K median salary is the lowest among high-demand skills — best used as a supporting skill, not a primary focus
+- ⚠️ **Legacy penalty:** SAP and Oracle appear in 57–59 postings each but both cap out at $75K median — strong signal that legacy enterprise tools carry limited upside in modern DS careers
 
 ---
 
@@ -95,7 +97,7 @@ By querying across these interconnected tables, I extracted insights about skill
 
 - **Complex Joins**: Multi-table `INNER JOIN` operations across `job_postings_fact`, `skills_job_dim`, and `skills_dim`
 - **Aggregations**: `COUNT()`, `MEDIAN()`, `ROUND()` for statistical analysis
-- **Filtering**: Boolean logic with `WHERE` clauses and multiple conditions (`job_title_short`, `job_work_from_home`, `salary_year_avg IS NOT NULL`)
+- **Filtering**: Boolean logic with `WHERE` clauses and multiple conditions (`job_title_short`, `job_location`, `salary_year_avg IS NOT NULL`)
 - **Sorting & Limiting**: `ORDER BY` with `DESC` and `LIMIT` for top-N analysis
 
 ### Data Analysis Techniques
@@ -103,5 +105,5 @@ By querying across these interconnected tables, I extracted insights about skill
 - **Grouping**: `GROUP BY` for categorical analysis by skill
 - **Mathematical Functions**: `LN()` for natural logarithm transformation to normalize demand metrics
 - **Calculated Metrics**: Derived optimal score combining log-transformed demand with median salary
-- **HAVING Clause**: Filtering aggregated results (skills with >= 100 postings)
+- **HAVING Clause**: Filtering aggregated results (skills with >= 50 postings)
 - **NULL Handling**: Proper filtering of incomplete records (`salary_year_avg IS NOT NULL`)
